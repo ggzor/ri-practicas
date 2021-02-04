@@ -30,6 +30,7 @@ with open("SalidaSinCerradas.txt") as archivo:
         for palabra in re_palabra.findall(linea):
             matriz[-1][indice_palabras[palabra]] = 1
 
+# Imprimir la matriz en un archivo
 with open("matriz.csv", "w") as archivo_matriz:
     # Encabezado
     archivo_matriz.write(f"$doc,{','.join(palabras)}\n")
