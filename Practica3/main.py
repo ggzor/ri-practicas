@@ -30,13 +30,12 @@ with open("SalidaSinCerradas.txt") as archivo:
         for palabra in re_palabra.findall(linea):
             matriz[-1][indice_palabras[palabra]] = 1
 
-with open("palabras.txt", "w") as archivo_palabras:
-    archivo_palabras.write("\n".join(palabras))
-
-with open("matriz.txt", "w") as archivo_matriz:
+with open("matriz.csv", "w") as archivo_matriz:
+    # Encabezado
+    archivo_matriz.write(f"$doc,{','.join(palabras)}\n")
     # Imprimir cada fila de cada documento
-    for fila in matriz:
-        archivo_matriz.write(f"{','.join(str(x) for x in fila)}\n")
+    for fila, i in zip(matriz, count(1)):
+        archivo_matriz.write(f"{i},{','.join(str(x) for x in fila)}\n")
 
 consultas = [
     ["mejor"],
