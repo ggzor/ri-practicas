@@ -19,7 +19,7 @@ def pesoTF(x):
         return 0
 
 
-with open("documento2.txt", encoding="utf-8") as archivo:
+with open("documento.txt", encoding="utf-8") as archivo:
     # Agregar las palabras nuevas al conjunto de palabras
     N = 0
 
@@ -29,13 +29,14 @@ with open("documento2.txt", encoding="utf-8") as archivo:
         for p in re_palabra.findall(linea):
             palabras[p][i] += 1
 
+    # Reutilizado de la práctica anterior
     palabras = {p: [v[i] for i in range(N)] for p, v in palabras.items()}
     tf = {p: [pesoTF(x) for x in l] for p, l in palabras.items()}
     ni = {p: len([x for x in l if x > 0]) for p, l in palabras.items()}
     idf = {p: log(N / x, 2) for p, x in ni.items()}
     wi = {p: [x * idf[p] for x in l] for p, l in tf.items()}
 
-    vector = {d: (sum(l[d] ** 2 for t, l in wi.items())) ** 0.5 for d in range(0, N)}
+    vector = {d: (sum(l[d] ** 2 for _, l in wi.items())) ** 0.5 for d in range(0, N)}
 
     def rankear(consulta):
         resultado = {}
@@ -43,9 +44,22 @@ with open("documento2.txt", encoding="utf-8") as archivo:
         for d in range(N):
             suma = 0
             for t in consulta:
-                suma += idf[t] * wi[t][d]
-            resultado[d] = suma / vector[d]
+                suma += idf.get(t, 0) * wi.get(t, [0] * N)[d]
+            if suma > 0:
+                resultado[d] = suma / vector[d]
 
         return sorted(resultado.items(), key=lambda r: r[1], reverse=True)
 
-    pprint(rankear(["to", "do"]))
+    consultas = [
+        ["mejor"],
+        ["lugar"],
+        ["lugar", "mejor"],
+        ["a"],
+        ["día", "hoy", "mujer"],
+        ["hoy", "mujer", "día"],
+    ]
+
+    for c in consultas:
+        print("Consulta: ", ",".join(c))
+        pprint(rankear(c))
+        print()
