@@ -56,7 +56,7 @@ if not archivo_stopwords.exists():
 stopwords = set(archivo_stopwords.read_text("utf-8").split("\n"))
 
 # Procesar cada documento
-with open(originales) as archivo:
+with open(originales, encoding="utf-8") as archivo:
     vocabulario = set()
 
     documentos = []
