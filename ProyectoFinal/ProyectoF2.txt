@@ -1,0 +1,15 @@
+<periodico> Proceso</periodico>
+<noticia>1 </noticia>
+<cuerpo>
+ Peña y Salinas, en vías de romper: AMLO
+  MÉXICO, D.F., (proceso.com.mx).- Andrés Manuel López Obrador, líder del Movimiento de Regeneración Nacional (Morena), aseguró que el presidente Enrique Peña Nieto quiere independizarse de su antecesor Carlos Salinas de Gortari.
+Una de las pruebas de la ruptura entre ambos grupos políticos, según López Obrador, es la salida de Francisco Rojas de la dirección de la Comisión Federal de Electricidad. El tabasqueño también sostuvo que la entrevista con Carlos Ahumada difundida semanas previas por el periódico El Universal en la que el empresario acusa a Salinas de ser el cerebro de los llamados “videoescándalos” es otro indicio de la ruptura entre el actual presidente y quien lo fue de 1988 a 1994.
+“Ya Peña quiere separarse, debe de preocuparnos a todos, estos se llevan fuerte, no es un asunto de que ya se pelearon, no, son asuntos de pleitos en la cúpula, es algo que también nos atañe a la nación porque se llevan fuerte, entonces cuando se reparte mal el botín, hay motín”, aseveró en entrevista con Carmen Aristegui para MVS Noticias.
+Apuntaló: “Puede estar en puerta un pleito porque Peña quiere independizarse… En año y medio, al calor de las reformas estructurales, sobre todo de la reforma energética, que significa negocios, dinero, ellos le llaman business… a EPN le interesó ser actor preponderante… sale Rojas, es salinista y salen otros, a lo mejor ahora lo que quiere Peña es independizarse y crear su propio cártel, una especie de grupo Atlacomulco, por los negocios que están en puerta”.
+López Obrador, quien ayer presentó su más reciente libro, “Neoporfirismo: hoy como ayer”, sostuvo que Salinas fue el cerebro detrás de la campaña de videoescándalos contra personajes de la administración del Distrito Federal. Salinas pidió a Ahumada llevar a Gustavo Ponce, extitular de Finanzas de la administración capitalina, a Las Vegas, para grabarlo apostando y posteriormente difundirlo, según el tabasqueño.
+</cuerpo>
+
+<periodico> Proceso</periodico>
+<noticia>2 </noticia>
+<cuerpo>
+Diputados del PRI y de la izquierda riñen por Ley de Pensiones. MÉXICO, D.F. (proceso.com.mx).- Entre empujones y caídas protagonizadas por legisladores del PRI y de los tres partidos de izquierda representados en San Lázaro, inició hoy la discusión de la Ley de Pensiones que contempla establecer una bolsa para el seguro de desempleo.
